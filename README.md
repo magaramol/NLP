@@ -2,7 +2,7 @@
 
 ### Task Description
 
-The goal of this task is to preprocess text data for analysis or modeling for NLP Tasks. The following steps are applied to the text:
+The goal of this task is to preprocess text data for analysis or modeling for NLP tasks. The following steps are applied to the text:
 
 1. Convert all text to lowercase.
 2. Remove HTML tags.  
