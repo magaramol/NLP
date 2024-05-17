@@ -1,8 +1,9 @@
+# this code is used to fetch data from omdb api 
 import pandas as pd
 
 df=pd.read_csv('/home/ams/Documents/python/vscode/nlp/NLP/OMDB_data/movies.csv')
 
-
+#
 import requests
 import pandas as pd
 
