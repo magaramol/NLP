@@ -81,14 +81,6 @@ model_cbow = Word2Vec.load("word2vec_cbow.model")
 model_skipgram = Word2Vec.load("word2vec_skipgram.model")
 
 
-
-
-
-
-
-## Usage
-
-To train a Word2Vec model, you can use popular libraries such as Gensim in Python. Below is an example of how to train a Word2Vec model using Gensim:
 ```
 
 
