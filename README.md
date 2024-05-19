@@ -22,7 +22,7 @@ The goal of this task is to preprocess text data for analysis or modeling for NL
 Data fetched from OMDB API: [OMDB API](https://www.omdbapi.com/)
 
 
-# Word2Vec README
+# Word2Vec
 
 Word2Vec is a popular neural network-based model used for generating word embeddings, where words are mapped to vectors of real numbers in a continuous vector space. This README covers the advantages of Word2Vec, the types of Word2Vec models, and the differences between Continuous Bag of Words (CBOW) and Skip-Gram.
 
