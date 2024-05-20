@@ -87,3 +87,156 @@ model_skipgram = Word2Vec.load("word2vec_skipgram.model")
 # Conclusion
 
 Word2Vec is a powerful technique for creating word embeddings that capture semantic meaning and relationships between words. By choosing between CBOW and Skip-Gram models based on the dataset size, you can optimize the performance and efficiency of your natural language processing tasks.
+
+
+# Text Classification
+
+## Types of Classification in Machine Learning (Supervised Learning)
+
+1. **Tabular**
+    - Involves structured data with rows and columns, similar to a spreadsheet or database table.
+    - Common tasks include regression (predicting continuous values) and classification (assigning categories to instances).
+    - Examples: Predicting house prices, customer churn prediction.
+
+2. **Image Classification**
+    - Involves classifying images into predefined categories.
+    - Uses convolutional neural networks (CNNs) and other deep learning techniques.
+    - Examples: Identifying objects in images, facial recognition.
+
+3. **Text Classification**
+    - Involves categorizing text into predefined categories.
+    - Uses natural language processing (NLP) and machine learning techniques.
+    - Examples:
+        - Email spam or ham detection
+        - Sentiment analysis
+        - Message categorization (e.g., sales vs. support)
+
+## Types of Text Classification
+
+1. **Binary Classification**: Two classes
+    - The task is to classify instances into one of two possible categories.
+    - Examples: Spam vs. ham emails, positive vs. negative sentiment.
+
+2. **Multiclass Classification**: More than two classes
+    - The task is to classify instances into one of three or more possible categories.
+    - Examples: Classifying news articles into sports, politics, entertainment.
+
+3. **Multilabel Classification**: Instances can belong to multiple classes
+    - Each instance can be assigned multiple labels.
+    - Examples: Classifying a news article as both sports and politics.
+
+## Applications
+
+1. **Email Filtering**
+    - Determine if an email is spam or ham.
+    - Example: Gmail's spam filter.
+
+2. **Sentiment Analysis**
+    - Analyze sentiment in text data, such as reviews or social media posts.
+    - Example: Determining if a product review is positive, negative, or neutral.
+
+3. **Language Detection**
+    - Identify the language of a given text.
+    - Example: Google Translate detecting the input language.
+
+4. **Fake News Detection**
+    - Identify and classify news articles as real or fake.
+    - Uses NLP and machine learning techniques to analyze the content and metadata of news articles.
+    - Example: Platforms like Factmata and Fake News Challenge.
+
+## Pipeline
+
+1. **Data Acquisition**
+   - Import data from various sources, such as CSV files, databases, or APIs.
+   - Example: Using pandas to load a dataset from a CSV file.
+
+2. **Text Preprocessing**
+   - Clean and preprocess text data to make it suitable for analysis.
+   - Steps include:
+     - Converting text to lowercase
+     - Removing HTML tags
+     - Removing URLs
+     - Removing punctuation
+     - Implementing chat word treatment
+     - Spelling correction
+     - Removing stopwords
+     - Handling emojis
+
+3. **Text Vectorization**
+   - Convert text to numerical vectors using methods such as:
+     - Bag of Words (BoW)
+     - TF-IDF (Term Frequency-Inverse Document Frequency)
+     - Word2Vec
+
+4. **Modeling**
+   - Build and train models to classify text.
+   - Machine Learning models: Naive Bayes, Random Forest
+   - Deep Learning models: RNN, LSTM, CNN, BERT
+
+5. **Evaluation**
+   - Use metrics to evaluate model performance.
+   - Common metrics:
+     - Accuracy: Proportion of correctly classified instances
+     - Confusion Matrix: Table showing true vs. predicted classifications
+
+6. **Model Deployment**
+   - Deploy the model to a production environment.
+   - Platforms include:
+     - AWS (Amazon Web Services)
+     - GCP (Google Cloud Platform)
+     - Azure (Microsoft Azure)
+
+### Steps in Detail
+
+1. **Data Acquisition**
+   - Import data from various sources such as CSV files, databases, or APIs.
+   - Example: Using pandas to load a dataset from a CSV file.
+
+2. **Text Preprocessing**
+   - Clean and preprocess text data to make it suitable for analysis.
+   - Steps include converting text to lowercase, removing HTML tags, URLs, punctuation, implementing chat word treatment, spelling correction, removing stopwords, and handling emojis.
+
+3. **Text Vectorization**
+   - Convert text to numerical vectors using methods such as Bag of Words (BoW), TF-IDF, and Word2Vec.
+
+4. **Modeling**
+   - Build and train models to classify text.
+   - Machine Learning models: Naive Bayes, Random Forest
+   - Deep Learning models: RNN, LSTM, CNN, BERT
+
+5. **Evaluation**
+   - Use metrics to evaluate model performance.
+   - Common metrics: Accuracy, Confusion Matrix
+
+6. **Model Deployment**
+   - Deploy the model to a production environment.
+   - Platforms include AWS (Amazon Web Services), GCP (Google Cloud Platform), and Azure (Microsoft Azure).
+
+## Different Approaches
+
+1. **Heuristic Approach**
+   - Useful when dealing with limited data.
+   - Involves using domain knowledge to manually create rules for classification.
+
+2. **API-Based Approach**
+   - Utilize commercial APIs (e.g., AWS, GCP, NLP Cloud).
+   - Example: [NLP Cloud Sentiment Analysis](https://nlpcloud.com/home/playground/sentiment-analysis)
+   - Advantages: No need to develop models from scratch
+   - Disadvantages: Can incur costs
+
+3. **Machine Learning Approach**
+   - Techniques:
+     - Bag of Words (BoW)
+     - TF-IDF (for information retrieval)
+     - Word2Vec (pretrained or custom-trained on your data)
+
+4. **Deep Learning Approach**
+   - Models: RNN, LSTM, CNN, BERT
+
+## Final Words
+
+1. Use ensemble models for better performance.
+2. Incorporate heuristic features where applicable.
+3. Start with machine learning models before diving into deep learning.
+4. Handle imbalanced datasets carefully.
+5. Focus on practical projects to gain hands-on experience.
